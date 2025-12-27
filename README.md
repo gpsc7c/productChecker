@@ -20,4 +20,5 @@
 # How to Run:
              No current executable, intended to be runnable via python and
              via executable.
-            
+# How to Clone:
+             clone via Git from https://github.com/gpsc7c/productChecker
