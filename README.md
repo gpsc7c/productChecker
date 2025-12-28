@@ -1,6 +1,6 @@
 # Author(s): "Gregory Shelton"
 # Project  : Online Storefront Deal Checker
-# Version  : 0.0.0001
+# Version  : 0.0.0002
 # Updated  : 12/27/2025
 # Purpose  : 
              Simple 20-40 hour program for boot.dev, built to be a program
@@ -19,6 +19,10 @@
              the user if a page is inaccessible or down.
 # How to Run:
              No current executable, intended to be runnable via python and
-             via executable.
+             via executable "Productchecker.exe"/"Productchecker.py".
+             put into startup programs launcher (i.e. Startup programs 
+             preferences on linux, startup tab in task manager or run 
+             shell:startup and create a shortcut in the folder on windows)
 # How to Clone:
              clone via Git from https://github.com/gpsc7c/productChecker
+
