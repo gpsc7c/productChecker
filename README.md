@@ -1,6 +1,6 @@
 # Author(s): "Gregory Shelton"
 # Project  : Online Storefront Deal Checker
-# Version  : 0.0.0002
+# Version  : 0.0.0003
 # Updated  : 12/27/2025
 # Purpose  : 
              Simple 20-40 hour program for boot.dev, built to be a program
