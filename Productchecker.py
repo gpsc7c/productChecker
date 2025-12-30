@@ -1,12 +1,8 @@
 # This is Main, and the primary executable's core
 from datetime import datetime
 import os
-import tkinter as tk
-#tkinter setup
-root = tk.Tk()
-root.title = "costChecker"
-entry = tk.Entry(root)
-entryString = entry.get()
+import prod_window
+
 
 #resolves the local file name, 
 #|||||Note to self: if os isn't necessary outside functions, separate the ones that need it 
@@ -25,14 +21,17 @@ def Main():
     #USER FIRST
     ######
     try:
+        prod_window.root.mainloop()
         #creates or opens the file----------
-        prods_file = open(local_file_name(), 'a')
+        prods_file = open(local_file_name(), 'a+')
         #-----------------------------------
         while(True):
+        ##This currently is only working on a url-based system
+            
             break
         #_______________________________________________________________________
         #
-        #CHECK FOR A FILE
+        ###CHECK FOR A FILE
         #_______________________________________________________________________
         #_______________________________________________________________________
         #
@@ -60,6 +59,9 @@ def Main():
         ##LOOP TO CHECK THE FILE FOR EACH PRODUCT, PROMPT THE USER WITH URLS
         ##TO CHECK IF IT IS FINDING THE RIGHT ITEMS, THEN CONVERT TO URLS
         #_______________________________________________________________________
+    except PermissionError:
+        ###needs more work, but activates when a file can't be written to
+        print("productChecker: Can't write to this file, closing")
     finally:
         prods_file.close() 
         #tracks when the program ended running
